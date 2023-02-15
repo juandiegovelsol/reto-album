@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import Card from "./components/Card/Card";
+import rozesUnderTheGraveCover from "./components/Card/rozes-utg.jpg";
+
+import "./App.scss";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Card
+        imgSrc={rozesUnderTheGraveCover}
+        artist={"Rozes"}
+        artistClass={"Solista"}
+        albumName={"Under the grave"}
+        year={"(2016)"}
+        buttonText={"Dance"}
+      />
     </div>
   );
 }
